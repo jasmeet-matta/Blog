@@ -1,0 +1,8 @@
+.video{
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 15px #eee;
+  border-radius:15px;
+  width: 660px;
+  margin: 4rem auto;
+}

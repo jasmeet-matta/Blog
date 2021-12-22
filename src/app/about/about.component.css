@@ -1,0 +1,19 @@
+img{
+  box-shadow: 0 0 15px #eee;
+  border-radius:15px
+}
+h1{
+  font-weight: 600;
+  color:#fff;
+  margin-left: 50px;
+}
+p{
+  line-height: 2;
+  margin-left: 50px;
+}
+
+.pagin{
+  padding-top:2rem;
+  display: flex;
+  justify-content: center;
+}

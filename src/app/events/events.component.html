@@ -1,0 +1,114 @@
+<br><br><br>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 main-div">
+<div class="col">
+  <div class="card h-100">
+    <img src="assets\arch.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Architectural Photography</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna umece aliqua.</p>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img routerLink="/auto" src="assets\auto.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Automotive Photography</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod et dolore magna umece aliqua.</p>
+      <a routerLink="/auto"><h6>read more...</h6></a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img src="assets\astro.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Astro Photography</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, sed do eiusmod temp incididunt ut labore et dolore magna umece aliqua.</p>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img src="assets\street.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Street Photography</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod temp incididunt ut labore aliqua.</p>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img routerLink="/land" src="assets\landscape.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Landscape Photography</h5>
+      <p class="card-text">Lorem ipsume adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna umece aliqua.</p>
+      <a routerLink="/land"><h6>read more...</h6></a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+    <img src="assets\wild.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Wildlife Photography</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet, consecte ed do eiusmod temp incididunt ut labore et dolore magna umece aliqua.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<br><br>
+
+<h1>This data is fetched from an http GET request</h1>
+
+<div class="data" style="background-color:#eee">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Event Type</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let list of result">
+        <td width=560px>{{list.type | uppercase}}</td>
+        <td>{{list.location}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Event Type</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td width=560px>{{currentVal | uppercase}}</td>
+        <td>{{ currentVal2 | titlecase }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<div class="dynamic">
+  <label>Event Type</label><input type="text" #box/>
+  <button (click)="getVal(box.value)" class="btn-success event">Add Event</button>
+
+  <label>Location</label><input type="text" #box2/>
+  <button (click)="getVal2(box2.value)" class="btn-success">Add Location</button>
+</div>
+
+<nav class="pagin">
+<ul class="pagination">
+  <li class="prev page-item"><a class="page-link" routerLink="/about">Previous</a></li>
+  <li class="page-item"><a class="page-link" routerLink="/home">1</a></li>
+  <li class="page-item"><a class="page-link" routerLink="/about">2</a></li>
+  <li class="page-item active"><a class="page-link" routerLink="/events">3</a></li>
+  <li class=" next page-item"><a class="page-link" routerLink="/events">Next</a></li>
+</ul>
+</nav>

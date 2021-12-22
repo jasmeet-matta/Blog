@@ -1,0 +1,67 @@
+<br>
+<!-- Wrapper container -->
+<div class="container py-4 row">
+
+  <!-- Bootstrap 5 form -->
+  <form [formGroup]="contactForm" id="contactForm" class="col-lg-6">
+
+    <!-- Name input -->
+    <div class="mb-3">
+      <label class="form-label" for="name">Name</label>
+      <input class="form-control" id="name" type="text" placeholder="Name"  formControlName="name">
+      <span class="error" *ngIf="email?.invalid && email?.touched">Name is required</span>
+    </div>
+
+    <!-- Email address input -->
+    <div class="mb-3">
+      <label class="form-label" for="emailAddress">Email Address</label>
+      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" formControlName="email">
+    <span class="error" *ngIf="email?.invalid && email?.touched">E-mail is invalid</span>
+    </div>
+
+    <!-- Phone Number -->
+    <div class="mb-3">
+      <label class="form-label" for="phone">Phone Number</label>
+      <input class="form-control" id="phone" type="tel" placeholder="Phone Number" formControlName="phone">
+    </div> <br>
+
+    <!-- Date -->
+    <div class="mb-3">
+      <label class="form-label" for="date">Date</label>
+      <input class="form-control" id="date" type="date" name="Date"/>
+    </div> <br>
+
+    <!-- Message input -->
+    <div class="mb-3">
+      <label class="form-label" for="message">Message(optional)</label>
+      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+    </div> <br>
+
+    <!-- Form submit button -->
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+    </div>
+
+  </form>
+
+  <br><br>
+
+  <div style="width:45%; margin:2rem 0 0 3rem;" class="col-lg-6">
+  <iframe width="100%" height="360" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Pune%20+(blog)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">bike gps</a></iframe>
+  <br><br><br><br>
+
+  <div class="box row">
+    <div class="col">
+      <p class="top">Name: Jasmeet Matta</p>
+      <p>Address: Pune</p>
+      <!-- <p <a href=""></a></p> -->
+      <a href="tel:9876543218"><p>Contact: 9876543218</p></a>
+    </div>
+    <div class="col">
+      <img class="me" src="https://images.unsplash.com/photo-1603574670812-d24560880210?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" class="img-fluid" style="" alt="">
+  </div>
+  </div>
+</div>
+
+
+</div>
