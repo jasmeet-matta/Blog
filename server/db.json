@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "type": "fashion",
+      "location": "kolkata",
+      "id": 1
+    },
+    {
+      "type": "street",
+      "location": "pune",
+      "id": 3
+    },
+    {
+      "type": "wildlife",
+      "location": "chennai",
+      "id": 4
+    },
+    {
+      "type": "astro",
+      "location": "manali",
+      "id": 5
+    },
+    {
+      "type": "automotive",
+      "location": "mumbai",
+      "id": 6
+    },
+    {
+      "type": "architectural ",
+      "location": "bangalore",
+      "id": 7
+    }
+  ]
+}
